@@ -10,7 +10,7 @@ kv_namespaces = [
 ]
 
 routes = [
-    { pattern = "short.boris1993.com", custom_domain = true }
+    { pattern = "short.boris1993.com/*", zone_name = "boris1993.com" }
 ]
 
 analytics_engine_datasets = [

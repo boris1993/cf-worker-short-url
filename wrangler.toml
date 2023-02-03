@@ -5,8 +5,8 @@ node_compat = true
 account_id = "34018b4941d2988926ae8ac16f096d26"
 
 kv_namespaces = [
-    { binding = "SHORT_URL", id = "", preview_id = "4b1c180a621842f29fad2c0c29fe62b2" },
-    { binding = "SHORT_URL_MAPPING", id = "", preview_id = "d69b410d49c34d878b91b206f7def860" },
+    { binding = "SHORT_URL", id = "{KV_SHORT_URL_BINDING_ID}", preview_id = "4b1c180a621842f29fad2c0c29fe62b2" },
+    { binding = "SHORT_URL_MAPPING", id = "{KV_SHORT_URL_MAPPING_BINDING_ID}", preview_id = "d69b410d49c34d878b91b206f7def860" },
 ]
 
 routes = [

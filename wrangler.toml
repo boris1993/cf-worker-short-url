@@ -2,11 +2,11 @@ name = "cf-worker-short-url"
 main = "src/index.ts"
 compatibility_date = "2023-02-03"
 node_compat = true
-accountId = "34018b4941d2988926ae8ac16f096d26"
+account_id = "34018b4941d2988926ae8ac16f096d26"
 
 kv_namespaces = [
-    { binding = "SHORT_URL", preview_id = "4b1c180a621842f29fad2c0c29fe62b2" },
-    { binding = "SHORT_URL_MAPPING", preview_id = "d69b410d49c34d878b91b206f7def860" },
+    { binding = "SHORT_URL", id = "", preview_id = "4b1c180a621842f29fad2c0c29fe62b2" },
+    { binding = "SHORT_URL_MAPPING", id = "", preview_id = "d69b410d49c34d878b91b206f7def860" },
 ]
 
 routes = [

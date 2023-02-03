@@ -30,14 +30,15 @@ async function handleGetRequest(
 ): Promise<Response> {
 	let url_parts = url.parse(request.url);
 	let path = url_parts.pathname;
-	let pathParts = path?.split("/");
 
-	if (pathParts?.length !== 2) {
+	if (path == null || path.split(/\/(?=.)/).length !== 2) {
+		console.info("No short URL key provided. Returning 400");
 		return new Response("", {
-			status: 404
+			status: 400
 		});
 	}
 
+	let pathParts = path?.split("/");
 	if (pathParts[1] === "favicon.ico") {
 		return new Response();
 	}

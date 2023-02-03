@@ -1,5 +1,5 @@
 import * as url from 'url';
-import { RequestBody, ShortUrl } from './model';
+import { RequestBody, ResponseBody, ShortUrl } from './model';
 
 const INITIAL_SEQUENCE_NUMBER = 100000;
 
@@ -79,7 +79,15 @@ async function handlePostRequest(
 	let existingShortUrl = await env.SHORT_URL_MAPPING.get(targetUrl) as string;
 	if (existingShortUrl !== null) {
 		console.info(`Existing short URL key ${existingShortUrl} found for ${targetUrl}`);
-		return new Response(existingShortUrl);
+		let responseBody = new ResponseBody(existingShortUrl);
+		return new Response(
+			JSON.stringify(responseBody),
+			{
+				status: 201,
+				headers: {
+					'content-type': 'application/json'
+				}
+			});
 	}
 
 	let curentSequence = await getCurrentSequence(env);
@@ -99,9 +107,15 @@ async function handlePostRequest(
 		shortUrlKey: key,
 	});
 
-	return new Response(`${key}`, {
-		status: 201
-	});
+	let responseBody = new ResponseBody(key);
+	return new Response(
+		JSON.stringify(responseBody),
+		{
+			status: 201,
+			headers: {
+				'content-type': 'application/json'
+			}
+		});
 }
 
 async function getCurrentSequence(env: Env): Promise<number> {

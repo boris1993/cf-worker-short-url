@@ -99,7 +99,9 @@ async function handlePostRequest(
 		shortUrlKey: key,
 	});
 
-	return new Response(`${key}`);
+	return new Response(`${key}`, {
+		status: 201
+	});
 }
 
 async function getCurrentSequence(env: Env): Promise<number> {

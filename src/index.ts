@@ -33,7 +33,7 @@ async function handleGetRequest(
 
 	if (path == null || path.split(/\/(?=.)/).length !== 2) {
 		console.info("No short URL key provided. Returning 400");
-		return new Response("", {
+		return new Response("No short URL key provided.", {
 			status: 400
 		});
 	}
@@ -50,7 +50,7 @@ async function handleGetRequest(
 	let shortUrlJson = await env.SHORT_URL.get(key);
 	if (shortUrlJson === null) {
 		console.info(`No target URL found for key ${key}`);
-		return new Response("", {
+		return new Response("No target URL found", {
 			status: 404
 		});
 	}

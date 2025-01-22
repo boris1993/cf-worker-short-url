@@ -17,3 +17,6 @@ routes = [
 analytics_engine_datasets = [
     { binding = "SHORT_URL_ANALYTICS" }
 ]
+
+[observability]
+enabled = true

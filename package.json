@@ -5,8 +5,8 @@
     "@cloudflare/workers-types": "^4.20230115.0",
     "@types/node": "^18.11.18",
     "typescript": "^4.9.5",
-    "vitest": "^0.28.3",
-    "wrangler": "3.22.1"
+    "vitest": "^3.1.2",
+    "wrangler": "4.13.2"
   },
   "private": true,
   "scripts": {

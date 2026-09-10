@@ -6,7 +6,7 @@
     "@types/node": "^18.11.18",
     "typescript": "^4.9.5",
     "vitest": "^4.1.11",
-    "wrangler": "4.129.0"
+    "wrangler": "4.131.0"
   },
   "private": true,
   "scripts": {

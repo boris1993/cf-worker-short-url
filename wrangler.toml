@@ -1,6 +1,6 @@
 name = "cf-worker-short-url"
 main = "src/index.ts"
-compatibility_date = "2023-02-03"
+compatibility_date = "2026-08-03"
 compatibility_flags = [ "nodejs_compat" ]
 account_id = "34018b4941d2988926ae8ac16f096d26"
 

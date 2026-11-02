@@ -655,10 +655,10 @@ magic-string@^1.4.3:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.6.0"
 
-miniflare@5.20261023.0-beta:
-  version "5.20261023.0-beta"
-  resolved "https://registry.yarnpkg.com/miniflare/-/miniflare-5.20261023.0-beta.tgz#a1464aaf52778608fa9d1fb02fd4bc848cc5cfbc"
-  integrity sha512-SHY8A98gCvmrnBLqABHRTSh3duAL1z+tHPRZu/tqxHFqVARrZ4oQis/ALYwp3XvzHvs6B/ff/CdcCafqP+cOFA==
+miniflare@5.20261023.3-beta:
+  version "5.20261023.3-beta"
+  resolved "https://registry.yarnpkg.com/miniflare/-/miniflare-5.20261023.3-beta.tgz#4919d52f8997fbd1873e2b8b35346a51e4b33de1"
+  integrity sha512-thdXzlktu5GE1o/BlmMAPeJ0Cu6Tu5LpMbRlyfRrpVvMRrhd6p52TMqcITCZZLVzt1UO92VGBkLDhLOpryUAyQ==
   dependencies:
     "@cspotcode/source-map-support" "0.8.1"
     sharp "0.35.5"
@@ -838,16 +838,16 @@ workerd@1.20261023.1:
     "@cloudflare/workerd-linux-arm64" "1.20261023.1"
     "@cloudflare/workerd-windows-64" "1.20261023.1"
 
-wrangler@4.153.0:
-  version "4.153.0"
-  resolved "https://registry.yarnpkg.com/wrangler/-/wrangler-4.153.0.tgz#5e0b3589d0504d8b55241a31d0660c5330899a6a"
-  integrity sha512-Hn1AowKzZao/729rMpdpxBZt/RaKQNJ4GtKtHQcOrwT+J/GIq0iwl680+dhJyO00iSsXaCkxoNcLg3yVIwIvyw==
+wrangler@4.156.0:
+  version "4.156.0"
+  resolved "https://registry.yarnpkg.com/wrangler/-/wrangler-4.156.0.tgz#b5aae4bb2de3b6236dd109515768196c2bcea66c"
+  integrity sha512-kVLAShuLiNgE3jcrmXcymDf/iPKDPrSxACe5ueugW/33HeNB9E9CkKYchudCeBwgmsnl4k+1zt4NO7vqb/fRuQ==
   dependencies:
     "@cloudflare/kv-asset-handler" "0.5.0"
     "@cloudflare/unenv-preset" "2.16.2"
     blake3-wasm "2.1.5"
     esbuild "0.28.2"
-    miniflare "5.20261023.0-beta"
+    miniflare "5.20261023.3-beta"
     path-to-regexp "6.3.0"
     unenv "2.0.0-rc.24"
     workerd "1.20261023.1"
